@@ -14,4 +14,11 @@ export class ParentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  activate($event: any) {
+    console.log('Obtain providers from ', $event)
+  }
+
+  deactivate($event: any) {
+    console.log('Dismiss providers from ', $event)
+  }
 }
